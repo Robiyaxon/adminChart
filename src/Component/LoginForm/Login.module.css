@@ -1,0 +1,100 @@
+.Login {
+          margin-top: 2rem;
+}
+.error{
+          background: red;
+          text-align: center;
+          color: white;
+}
+.Wrapper {
+          border-radius: 20px;
+          padding: 3rem;
+          color: black;
+          box-sizing: border-box !important;
+          display: flex !important;
+          align-items: center !important;
+          flex-wrap: wrap !important;
+          justify-content: space-between !important;
+          background-color: #fff;
+}
+.Input1{
+          width: 350px !important;
+          color: black;
+}
+img{
+          width: 300px;
+          object-fit: contain;
+}
+.Input1 {
+           height: 40px !important;
+           margin-bottom: 0.5rem;
+        
+}
+.button34{
+          border: none;
+          border-radius: 5px;
+          background-color: red;
+          padding: 0.5rem;
+          cursor: pointer;
+          color: white;
+          margin-right: 1rem;
+}
+.button35{
+          border: none;
+          border-radius: 5px;
+          margin-left: 1rem;
+          background-color: blue;
+          padding: 0.5rem 1rem;
+          color: white;
+}
+.Wrapper h1 {
+          font-size: 26px;
+          margin: 1rem 0;
+          text-align: center;
+          width: 65%;
+          font-family: fantasy;
+}
+
+@media (min-width:0) and (max-width:950.9px) {
+          .Login {
+                    margin-top: 2rem;
+          }
+          
+          .Wrapper {
+                    border-radius: 10px;
+                    padding: 1rem;
+                    justify-content: center !important;
+                    width: 90%;
+                    overflow: hidden;
+          }
+          .Input1{
+                    width: 100% !important;
+                   display: flex !important;
+                   justify-content: center !important;
+          }
+          img{
+                    max-width: 100%;
+                    height: 200px;
+          }
+          .Input1 input{
+                     height: 35px !important;
+          }
+          .Wrapper h1 {
+                    font-size: 26px;
+                    margin: 1rem 0;
+                    text-align: center;
+                    width: 65%;
+                    font-family: fantasy;
+          }
+          
+
+
+}
+@media (min-width:951px) and (max-width:1100px) {
+          .Wrapper {
+                    border-radius: 10px;
+                    padding: 1rem;
+                    justify-content: center !important;
+                    width: 90%;
+          }
+}

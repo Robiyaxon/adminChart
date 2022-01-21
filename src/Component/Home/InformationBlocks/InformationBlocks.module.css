@@ -1,0 +1,86 @@
+.BlockBody {
+          width: 100%;
+          margin: 2rem 0;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+}
+
+
+.blockBox {
+          width: 23%;
+          background-color: #212b36;
+          color: rgb(255, 255, 255);
+          transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+          box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px 0px, rgb(0 0 0 / 12%) 0px 12px 24px -4px;
+          border-radius: 16px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 148px;
+          padding: 24px;
+}
+
+.box h1 {
+          padding: 0;
+          margin: 0;
+          font-family: "Public Sans", sans-serif;
+
+}
+
+.box p {
+          font-weight: 600;
+          margin: 10px;
+          padding: 0;
+          line-height: 1.57143;
+          font-size: 0.875rem;
+          font-family: "Public Sans", sans-serif;
+}
+
+.Gradus {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+}
+
+
+.TrendingUpSharp {
+          border-radius: 50%;
+          color: rgb(84, 214, 44);
+          padding: 1px;
+          background-color: rgba(84, 214, 44, 0.16) !important;
+}
+
+@media(min-width:0) and (max-width:700.9px) {
+          .BlockBody {
+                    justify-content: center;
+          }
+
+          .blockBox {
+                    width: 90%;
+                    margin: 0.5rem 0;
+                    border-radius: 14px;
+                    height: 148px;
+                    padding: 24px;
+          }
+
+          .box h1 {
+                    font-size: 22px;
+          }
+}
+
+@media(min-width:701px) and (max-width:977.9px) {
+          .BlockBody {
+                    justify-content: space-between;
+
+          }
+
+          .blockBox {
+                    width: 45%;
+                    margin: 1rem 0;
+                    border-radius: 14px;
+                    height: 148px;
+                    padding: 24px;
+          }
+}

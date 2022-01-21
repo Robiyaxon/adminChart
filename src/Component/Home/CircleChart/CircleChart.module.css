@@ -1,0 +1,20 @@
+.smNone{
+          display: flex;
+          justify-content: space-around;
+          margin-top: 2rem;
+          border-top: 2px solid grey;
+}
+.title{
+          color: #fff;
+}
+@media (min-width:0) and (max-width:300.9px){
+          .smNone{
+                    display: none;
+          }
+}
+
+@media (min-width:0) and (max-width:700.9px) {
+          .title{
+                    font-size: 16px;
+          }
+}

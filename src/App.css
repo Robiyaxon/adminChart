@@ -1,0 +1,96 @@
+body {
+          overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+          width: 3px !important;
+}
+
+::-webkit-scrollbar-thumb {
+          background-color: rgb(255, 193, 7) !important;
+          border-radius: 50px !important;
+}
+
+.MuiDrawer-paperAnchorTop {
+          width: 85%;
+          margin: 0 0 0 auto;
+}
+
+.MuiPaper-elevation4 {
+          box-shadow: none !important;
+}
+
+body {
+          background-color: #161c24 !important;
+}
+
+.MuiList-root {
+          padding: 1rem 0 !important;
+          background-color: #161c24 !important;
+}
+
+.jss9 {
+          border: none !important;
+}
+
+.ant-form-item-label>label {
+          width: 100%;
+          font-size: 21px;
+}
+
+.MuiDivider-root {
+          display: none !important;
+}
+
+.makeStyles-drawerClose-9,
+.makeStyles-drawerOpen-8,
+.makeStyles-drawerOpen-48,
+.makeStyles-drawerOpen-18 {
+          overflow: hidden !important;
+}
+
+.MuiMenu-paper {
+          background: none !important;
+}
+
+.MuiMenu-list {
+          background-color: #383c41 !important;
+}
+
+.makeStyles-content-3{
+          margin-top: 1rem;
+}
+
+@media (min-width:0) and (max-width:800.9px) {
+          .makeStyles-content-4 {
+                    position: absolute;
+                    width: 100%;
+                    padding: 0 !important;
+          }
+          /* .MuiFab-sizeSmall */
+
+          .makeStyles-content-10 {
+                    padding: 5px !important;
+          }
+
+          .makeStyles-drawerClose-19,
+          .makeStyles-drawerClose-11 {
+                    position: absolute !important;
+          }
+
+          .chartjs-render-monitor {
+                    width: 100% !important;
+          }
+
+          .dnone {
+                    display: none !important;
+          }
+
+          .makeStyles-drawerClose-9 {
+                    position: absolute !important;
+          }
+
+          .makeStyles-content-11 {
+                    padding: 0 !important;
+          }
+}

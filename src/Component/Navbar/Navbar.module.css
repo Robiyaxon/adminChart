@@ -1,0 +1,154 @@
+.logo {
+     color: gold;
+margin: auto 0;
+     font-family: "Public Sans", sans-serif;
+     line-height: 24px;
+     justify-content: space-evenly;
+}
+
+.userBlock {
+     border-radius: 10px;
+     height: 80px;
+     background-color: #595f663d;
+     width: 90%;
+     display: flex;
+     justify-content: space-evenly;
+}
+
+.UserContainer {
+     display: flex;
+     margin-bottom: 2rem;
+     justify-content: center;
+     width: 100%;
+}
+
+.userBlock h2 {
+height: 60%;
+margin: auto 0;
+     width: 20%;
+     border-radius: 50%;
+     font-family: 'Courier New', Courier, monospace;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(255, 193, 7);
+}
+
+.userBlock div {
+     width: 55%;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+}
+
+.userBlock h6 {
+     width: 100%;
+     font-size: 14px;
+     color: white;
+     font-weight: bolder;
+     padding: 0;
+     margin: 0;
+}
+
+.userBlock p {
+     margin: 5px 0 0 0;
+     padding: 0;
+     color: #ddd;
+
+}
+
+.headerButton {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     margin-top: 1rem;
+     justify-content: space-between;
+}
+
+.headerButton img {
+     width: 33px;
+     height: 20px;
+
+}
+
+.BtnGroup {
+     display: flex;
+     width: 12%;
+     align-items: center;
+     justify-content: space-around;
+}
+
+.title {
+     text-align: center;
+}
+
+.activeNavbar .NavLinkStyle3 {
+     color: rgb(253, 169, 45) !important;
+     background-color: rgba(253, 169, 45, 0.16) !important;
+     border-right: 3px solid;
+}
+
+.NavLinkStyle3 {
+     height: 46px;
+}
+
+.activeNavbar .NavLinkStyle {
+     color: rgb(253, 169, 45) !important;
+}
+
+.NavLinkStyle {
+     color: white;
+}
+
+.NavLinkStyle2 {
+     color: white;
+     text-decoration: none;
+}
+
+
+@media (min-width:0) and (max-width:800.9px) {
+.dNone{
+          display: none;
+}
+}
+
+
+@media(min-width:0) and (max-width:699.9px) {
+     .logo {
+               line-height: 24px;
+               font-size: 25px;
+     }
+
+     .userBlock h2 {
+               display: none;
+     }
+
+     .userBlock div {
+               width: 90%;
+               display: flex;
+               justify-content: center;
+     }
+
+     .userBlock h2 {
+               width: 18%;
+     }
+
+     .UserContainer {
+               margin-bottom: 1rem;
+     }
+     .headerButton {
+               margin-top: 0;
+     }
+
+
+}
+
+@media(min-width:0) and (max-width:800.9px) {
+     .userBlock {
+               max-width: 400px;
+     }
+
+     .headerButton img {
+               display: none;
+     }
+}
