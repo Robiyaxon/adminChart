@@ -13,6 +13,7 @@ import '../../App.css'
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { Flag } from './Flag'
+import AvatarContainer from '../Header/Avatar/AvatarContainer'
 
 export function Header(classes, open, handleDrawerOpen) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -24,56 +25,57 @@ export function Header(classes, open, handleDrawerOpen) {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  return( <>
- <Menu
+  return (
+    <>
+      <Menu
         id="simple-menu"
         anchorEl={anchorEl}
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} style={{color:"white"}}>Roziya</MenuItem>
-        <MenuItem onClick={handleClose} style={{color:"white"}}>Fazilat</MenuItem>
-        <MenuItem onClick={handleClose} style={{color:"white"}}>Gulnura</MenuItem>
+        <MenuItem onClick={handleClose} style={{ color: "white" }}>Roziya</MenuItem>
+        <MenuItem onClick={handleClose} style={{ color: "white" }}>Fazilat</MenuItem>
+        <MenuItem onClick={handleClose} style={{ color: "white" }}>Gulnura</MenuItem>
       </Menu>
-   <AppBar
-    position="fixed"
-    className={clsx(classes.appBar, {
-      [classes.appBarShift]: open,
-    })}
-  >
-    <Toolbar>
-      <IconButton
-        color="inherit"
-        aria-label="open drawer"
-        onClick={handleDrawerOpen}
-        edge="start"
-        className={clsx(classes.menuButton, { [classes.hide]: open, })}>
-        <MenuIcon />
-      </IconButton>
-      {open ?
-        <div className={style.headerButton + " " + style.dNone}>
-          <SearchButton bol={open} />
-          <div className={style.BtnGroup}>
-          <Flag/>
-            <SimpleBadge  className={style.dNone}/>
-            {/* <SupervisorAccountIcon style={{cursor:"pointer"}} onClick={handleClick}/> */}
-            <LetterAvatars />
-          </div>
-        </div>
-        : <div className={style.headerButton}>
-          <SearchButton />
-          <div className={style.BtnGroup}>
-          <Flag/>
-            <SimpleBadge />
-            <SupervisorAccountIcon style={{cursor:"pointer"}} onClick={handleClick} />
-            <LetterAvatars className={style.dNone}/>
-          </div>
-        </div>}
-    </Toolbar>
-  </AppBar>;
-  </>
- 
-  )}
+      <AppBar
+        position="fixed"
+        className={clsx(classes.appBar, {
+          [classes.appBarShift]: open,
+        })}
+      >
+        <Toolbar>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            onClick={handleDrawerOpen}
+            edge="start"
+            className={clsx(classes.menuButton, { [classes.hide]: open, })}>
+            <MenuIcon />
+          </IconButton>
+          {open ?
+            <div className={style.headerButton + " " + style.dNone}>
+              <SearchButton bol={open} />
+              <div className={style.BtnGroup}>
+                <Flag />
+                <SimpleBadge className={style.dNone} />
+                {/* <SupervisorAccountIcon style={{cursor:"pointer"}} onClick={handleClick}/> */}
+                <AvatarContainer />
+              </div>
+            </div>
+            : <div className={style.headerButton}>
+              <SearchButton />
+              <div className={style.BtnGroup}>
+                <Flag />
+                <SimpleBadge />
+                <SupervisorAccountIcon style={{ cursor: "pointer" }} onClick={handleClick} />
+                <AvatarContainer className={style.dNone} />
+              </div>
+            </div>}
+        </Toolbar>
+      </AppBar>;
+    </>
+  )
+}
 
-  export default Header;
+export default Header;

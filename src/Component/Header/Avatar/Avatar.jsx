@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function LetterAvatars() {
+export default function LetterAvatars(props) {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -35,7 +35,9 @@ export default function LetterAvatars() {
     setAnchorEl(null);
   };
   const handleClose2 = () => {
-    <LogoutContainer/>
+    if(props.isAuth){
+      props.UpdateIsAuthAC(false)
+    }
   };
 
   return (
@@ -45,7 +47,7 @@ export default function LetterAvatars() {
         anchorEl={anchorEl}
         keepMounted
         open={Boolean(anchorEl)}
-        onClose={handleClose && handleClose}
+        onClose={handleClose}
       >
         <MenuItem onClick={handleClose} style={{ color: "white" }}>Robiya</MenuItem>
         <MenuItem onClick={handleClose2} style={{ color: "white" }} >Chiqish</MenuItem>

@@ -38,9 +38,9 @@ export const KassaReduser = (state = initialState, action) => {
             }
         case ADD_NEW_REPORT:
             let stateCopy = { ...state }
-            let reportCopy = stateCopy.report = [...state.report]
+            stateCopy.report = [...state.report]
             let addReport = {
-                id: reportCopy.length + 1,
+                id: stateCopy.report.length + 1,
                 name: action.addNewName1,
                 product: action.addNewProduct1,
                 price: action.addNewPrice1 + " so`m",
@@ -48,7 +48,7 @@ export const KassaReduser = (state = initialState, action) => {
                 status:action.status
             }
 
-            reportCopy.push(addReport)
+            stateCopy.report.unshift(addReport)
 
             return stateCopy
         default:

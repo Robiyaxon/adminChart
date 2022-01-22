@@ -15,7 +15,7 @@ export function Content(classes, open, props) {
         <div className={classes.toolbar} />
           <TitlecONTAINERJSX isAuth={props.isAuth} />
           <Route path='/Chart' exact render={() => <DiagrammaContainer />} />
-          <Route path='/buyurtmalar' render={() => <BuyurtmalarComponent />} />
+          <Route path='/mahsulotlar' render={() => <BuyurtmalarComponent />} />
           <Route path='/kassa' render={() => <KassaContainer />} />
           <Route path='/xodimlar' render={() => <XodimlarContainer />} />
           <Route path='/chiqish' render={() => <LogoutContainer/>} />

@@ -95,7 +95,7 @@ const MainNavbar = (props) => {
 
   const NavbarMap = [
     { id: 0, to: "/Chart", title: "Bosh sahifa" },
-    { id: 1, to: "/buyurtmalar", title: "Buyurtmalar" },
+    { id: 1, to: "/mahsulotlar", title: "Mahsulotlar" },
     { id: 2, to: "/kassa", title: "Kassa" },
     { id: 3, to: "/xodim", title: "Xodimlar" },
     props.isAuth
